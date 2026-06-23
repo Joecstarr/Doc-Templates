@@ -24,7 +24,6 @@ refresh-sub:
 # Run tombi 
 do-tombi:
     tombi format docs 
-    tombi format ./pyproject.toml 
     tombi format ./.rumdl.toml 
     
 
@@ -52,6 +51,6 @@ check:
 ##################################################################################################
 
 # Run all formatting.  
-format: do-ruff do-rumdl do-tombi
+format: do-rumdl do-tombi
     @echo "🚀 Formated the files"
     exit 0

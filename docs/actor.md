@@ -8,7 +8,7 @@ authors:
 
 > [!note]
 >
-> Give a short description of the actor's role. 
+> Give a short description of the actor's role.
 
 ## Additional Information
 

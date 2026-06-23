@@ -1,0 +1,25 @@
+repos:
+    - repo: local
+      hooks:
+          - id: tombi
+            name: tombi
+            language: system
+            entry: tombi format --check
+            exclude:
+                glob:
+                    - ".github/**/*.*"
+                    - "libraries/**/*.*"
+            files:
+                glob:
+                    - "**/*.toml"
+          - id: docs
+            name: docs
+            language: system
+            entry: rumdl check
+            exclude:
+                glob:
+                    - ".github/**/*.*"
+                    - "libraries/**/*.*"
+            files:
+                glob:
+                    - "**/*.md"
